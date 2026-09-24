@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tito's Data Connections</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">T</div>
+  <div>
+    <h1>Tito's Data Connections</h1>
+    <p>Affordable data bundles</p>
+  </div>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>Buy Data Bundles</h2>
+    <p class="sub">
+      Choose your bundle and enter the number that will receive the payment prompt.
+    </p>
+
+    <label for="bundle">Select bundle</label>
+
+    <select id="bundle">
+      <option value="50">1 GB — KSh 50</option>
+      <option value="100">2 GB — KSh 100</option>
+      <option value="200">5 GB — KSh 200</option>
+      <option value="350">10 GB — KSh 350</option>
+    </select>
+
+    <label for="phone">M-Pesa phone number</label>
+
+    <input
+      id="phone"
+      type="tel"
+      placeholder="0712345678"
+      inputmode="numeric"
+    >
+
+    <div class="total">
+      <span>Total</span>
+      <strong id="amount">KSh 50</strong>
+    </div>
+
+    <button onclick="pay()">PAY NOW</button>
+
+    <p id="message"></p>
+  </section>
+
+  <section class="card contact">
+    <h2>Need help?</h2>
+    <p>Contact Tito's Data Connections for assistance.</p>
+
+    <a href="https://wa.me/" target="_blank">
+      WhatsApp Us
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Tito's Data Connections
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
